@@ -1,0 +1,85 @@
+const teamScala = [
+    // {
+    //     nombre:"YOVANA RIMARACHIN VASQUEZ",
+    //     cargo:"GERENTE GENERAL",
+    //     profesion:"ADMINISTRACIÓN",
+    //     especialidad:"",
+    //     foto:"",
+    // },
+    // {
+    //     nombre:"WILLIAM MARTÍN JULCA SILVA",
+    //     cargo:"JEFE DE PROYECTOS",
+    //     profesion:"",
+    //     especialidad:"",
+    //     foto:"",
+    // },
+    // {
+    //     nombre:"AIRAM VIRGINIA BRIONES CABRERA",
+    //     cargo:"JEFE DE ESTUDIOS",
+    //     profesion:"ING. CIVIL",
+    //     especialidad:"",
+    //     foto:"",
+    // },
+    // {
+    //     nombre:"EBELIO MEJÍA BUSTAMANTE",
+    //     cargo:"JEFE DE LICITACIONES",
+    //     profesion:"",
+    //     especialidad:"",
+    //     foto:"",
+    // },
+    // {
+    //     nombre:"SEGUNDO BALTAZAR VALQUI GAITAN",
+    //     cargo:"JEFE DE PROYECTO",
+    //     profesion:"",
+    //     especialidad:"",
+    //     foto:"",
+    // },
+    // {
+    //     nombre:"WALTER ANTONIO LOPEZ BENITES",
+    //     cargo:"JEFE DE PROYECTO",
+    //     profesion:"",
+    //     especialidad:"",
+    //     foto:"",
+    // },
+    // {
+    //     nombre:"DANIEL GUSTAVO VELÁSQUEZ DOMÍNGUEZ",
+    //     cargo:"JEFE DE PROYECTO",
+    //     profesion:"",
+    //     especialidad:"",
+    //     foto:"",
+    // },
+    {
+        nombre:"NOMBRE",
+        cargo:"CARGO",
+        profesion:"PROFESION",
+        especialidad:"ESPECIALIDAD",
+        foto:"",
+    },
+    {
+        nombre:"NOMBRE",
+        cargo:"CARGO",
+        profesion:"PROFESION",
+        especialidad:"ESPECIALIDAD",
+        foto:"",
+    },{
+        nombre:"NOMBRE",
+        cargo:"CARGO",
+        profesion:"PROFESION",
+        especialidad:"ESPECIALIDAD",
+        foto:"",
+    },{
+        nombre:"NOMBRE",
+        cargo:"CARGO",
+        profesion:"PROFESION",
+        especialidad:"ESPECIALIDAD",
+        foto:"",
+    },{
+        nombre:"NOMBRE",
+        cargo:"CARGO",
+        profesion:"PROFESION",
+        especialidad:"ESPECIALIDAD",
+        foto:"",
+    },
+
+
+]
