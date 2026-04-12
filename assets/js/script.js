@@ -81,20 +81,7 @@ function verMas(btn) {
 }
 const teamtrack = document.getElementById("team_cont");
 
-teamScala.forEach(team=>{
-  teamtrack.innerHTML += `
-  <div class="pryctrack_proy">
-    <div class="pryctrack_targ">
-      <img class="teamtrack_img" src="${team.foto}">
-      <p>${team.nombre}</p>
-      <p>${team.cargo}</p>
-      <p>${team.profesion}</p>
-      <p>${team.especialidad}</p>
-    </div>
-  </div>
-  `;
-}
-)
+
 
 
 
