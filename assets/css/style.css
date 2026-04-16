@@ -285,6 +285,10 @@ button{
     width: 11vw;
     color: white;
 }
+.cert_a_button{
+    display: flex;
+    justify-content: center;
+}
 .cert_button{
     margin: auto;
     color: #e8eaec;
