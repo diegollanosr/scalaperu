@@ -26,9 +26,11 @@ listaVal.forEach(val => {
 
 listaCert.forEach(cert => {
   const svg = `
+      <a href="${cert.enlace}" target="_blank">
       <svg class="cert_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path fill="currentColor" d="${cert.path}"></path>
+      <path fill="currentColor" d="${cert.path}"></path>
       </svg>
+      </a>
   `;
   contenedor.insertAdjacentHTML("beforeend", svg);
 });
@@ -59,10 +61,9 @@ listaProy1.forEach(proy=>{
   <div class="pryctrack_proy">
     <div class="pryctrack_targ">
         <p>${proy.titulo}</p>
-        <img class="pryctrack_img" src="${proy.img}">
+        <img class="pryctrack_img" src="./assets/imagenes/PROYECTOS/${proy.img}">
         <div class="pryctrack_ubi"><span>${proy.ubicacion}</span><span>${proy.anio}</span></div>
         <p>Obra ${proy.tipo}</p>
-        <p>${proy.cliente}</p>
         <button class="pryctrack_verMas" onclick="verMas(this)">Ver Más</button>
     </div>
     <div class="pryctrack_det">
@@ -79,9 +80,6 @@ function verMas(btn) {
   contenedor.classList.toggle('mostrar');
   btn.textContent = contenedor.classList.contains('mostrar') ? 'Ocultar' : 'Ver Más';
 }
-const teamtrack = document.getElementById("team_cont");
-
-
 
 
 

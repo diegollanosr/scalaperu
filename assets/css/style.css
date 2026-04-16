@@ -214,7 +214,7 @@ button{
     flex-direction: row-reverse;
 }
 .nost_targ p{
-    width: 80%;
+    width: 60vw;
     margin: auto;
 }
 .nost_desc{
@@ -234,8 +234,10 @@ button{
     padding: 2vw 0;
 }
 .nost_img{
-    width: 250px;
-    height: 150px;
+    width: 25vw;
+    height: calc(25vw / 16 * 9);
+    object-fit: cover;
+    border-radius: 10px;
 }
 .serv_cont_targ{
    width: 90%;
@@ -265,9 +267,11 @@ button{
     object-fit: cover;
 }
 .cert{
-    padding-top: 2vw;
+    padding: 2vw 0;
     background: var(--color-azul) url(../imagenes/fon_line_plan.png) no-repeat center fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .cert_cont_icon{
     width: 70%;
@@ -280,6 +284,22 @@ button{
     /* color: var(--color-azul-oscuro); */
     width: 11vw;
     color: white;
+}
+.cert_button{
+    margin: auto;
+    color: #e8eaec;
+    background: none;
+    width: 10vw;
+    height: 2vw;
+    border-radius: 5px;
+    border: 3px solid var(--color-azul-oscuro);
+    font-size: 22px;
+    font-weight: bold;
+}
+.cert_button:hover{
+    background-color: #364272;
+    border-color: #e8eaec;
+    
 }
 .proyectos{
     padding: 2.5vw 0 ;
@@ -350,9 +370,10 @@ button{
 .pryctrack_img{
     width: calc(15vw);
     background-color: #364272;
-    height: calc(15vw / 16 * 9);
+    height: calc(15vw / 16 * 12);
     border-radius: 5px;
-    flex: 0;
+    /* flex: 0; */
+    object-fit: cover;
 }
 .pryctrack_ubi{
     width: 100%;
@@ -372,21 +393,6 @@ button{
     padding: 5px;
     font-size: 18px;
 }
-.team_cont{
-    display: flex;
-    width: 95%;
-    margin: auto;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.teamtrack_img{
-    width: calc(15vw);
-    background-color: #364272;
-    height: calc(15vw / 4 * 5);
-    border-radius: 5px;
-}
-
 
 .clientes{
     padding: 30px 0;
@@ -395,15 +401,7 @@ button{
     gap: 30px;
     background-color: var(--color-azul);
 }
-.team{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px 0;
-}
-.team .line{
-        background: var(--color-azul);
-}
+
 
 
 
