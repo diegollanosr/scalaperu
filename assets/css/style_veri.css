@@ -1,0 +1,159 @@
+:root{
+    --color-blanco: #E4E7EE;
+    --color-gris: #333333;
+    --color-negro: #06111e;
+    --color-dorado: #e7a90c;
+    --color-azul: #001e50;
+    --color-rojo: #3879af;
+    --color-azul-oscuro: #041642;
+    --color-azul-transparente: #799deb62;
+    --color-blanco-transparente: #d2d4e050;
+    --color-modo-oscuro: #ac61f1;
+
+    --color--navselec: var(--color-azul);
+    --color--background: var(--color-blanco);
+    --color--background-resaltado: var(--color-azul-transparente) ;
+    --color--texto: var(--color-negro);
+    --color--icon-nav: var(--color-negro);
+    --color--targets: var(--color-rojo);
+    --border--targets: 2px solid var(--color--targets);
+    --color--fondo-nav: var(--color-dorado);
+
+    --font-nombre: 'Great Vibes', 'Lucida Handwriting', cursive;
+    --font-general: 'Alice', serif;
+    --font-courgette: 'Courgette','Segoe Print', cursive;
+
+    --sombra-modoOscuro: 0 0 15px 8px #ac61f180;
+    --img-fotoHome: url(../imagenes/fotodlr.png) no-repeat center;
+    --img-logo: url(../imagenes/logo.svg) no-repeat center;
+    --img-inmowasi: url(../imagenes/logos/inmowasi.webp) no-repeat center;
+    --img-tavo: url(../imagenes/logos/tavo.png) no-repeat center;
+    --img-giss: url(../imagenes/logos/giss_logo.png) no-repeat center;
+    --img-coficont: url(../imagenes/logos/coficont_iso.png) no-repeat center;
+    --img-modoOscuro: url(../imagenes/moon.jpg) no-repeat center;
+ }
+
+main{
+    min-height: calc(100vw/16*7);
+}
+.nav_link{
+    color: #364272;
+    font-family: "Squada One", sans-serif;
+    font-size: clamp(11px, 1.8vw , 35px );
+}
+
+
+
+/*Contacto*/
+.contacto{
+    width: 100%;
+    padding: 150px 0;
+    /* min-height: 70vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.targetContacto{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0 20px 3px var(--color--targets);
+    border: var(--border--targets);
+    border-radius: 6px;
+    margin: 25px auto;
+    padding: 15px 0;
+}
+.informacionContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    text-align: center;
+    gap: 2em;
+    padding: 2em;
+    border-right: var(--border--targets);
+}
+.textocontacto{
+    color: var(--color--texto);
+}
+.imgContacto{
+    width: 80%;
+}
+.contactoIcons{
+    width: 12em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contactoIcon{
+    font-size: 2em;
+    padding: .3em;
+    color: var(--color--targets);
+}
+.contactoIcon:hover{
+    background-color: var(--color-blanco);
+    border-radius: 50%;
+}
+.formularioContacto{
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	padding: 2em 0;
+    gap: 1.5em;
+    box-sizing: border-box;
+}
+.formularioLabel {
+	display: block;
+	height: 1.2em;
+	width: 75%;
+	margin: 15px auto;
+	color: var(--color--texto);
+}
+.formularioInput {
+	display: block;
+	margin: auto;
+	width: 75%;
+	height: 2em;
+    background: none;
+	border: none;
+	outline: none;
+	border-bottom: var(--border--targets);
+	color: var(--color--texto);
+    font-size: clamp(18px, .8vw, 35px);
+}
+.formularioBoton,
+textarea.formularioInput{
+    grid-column: 1 / 3;
+    height: 50px;
+    resize: none;
+    width: 80%;
+    margin: auto;
+}
+.formularioBoton{
+   background: none;
+   color: var(--color--targets);
+   border: var(--border--targets) ;
+   border-radius: 6px;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+.formularioBoton:hover{
+    background-color: var(--color--targets);
+    color: var(--color-blanco);
+}
+.formularioInput::placeholder{
+    color: var(--color-azul);
+}
+.formularioInput:focus::placeholder{
+    color: var(--color-blanco);
+}
+.formularioInput.error::placeholder{
+    color: var(--color--targets);
+}
+.mensajeError{
+    grid-column: 1 / 3;
+    color: var(--color-rojo);
+    text-align: center;
+}
