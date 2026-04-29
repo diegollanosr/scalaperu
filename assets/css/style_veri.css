@@ -4,7 +4,8 @@
     --color-negro: #06111e;
     --color-dorado: #e7a90c;
     --color-azul: #001e50;
-    --color-rojo: #3879af;
+    --color-rojo: #ff0000;
+    --color-azul-sp: #3879af;
     --color-azul-oscuro: #041642;
     --color-azul-transparente: #799deb62;
     --color-blanco-transparente: #d2d4e050;
@@ -15,22 +16,9 @@
     --color--background-resaltado: var(--color-azul-transparente) ;
     --color--texto: var(--color-negro);
     --color--icon-nav: var(--color-negro);
-    --color--targets: var(--color-rojo);
+    --color--targets: var(--color-azul-sp);
     --border--targets: 2px solid var(--color--targets);
     --color--fondo-nav: var(--color-dorado);
-
-    --font-nombre: 'Great Vibes', 'Lucida Handwriting', cursive;
-    --font-general: 'Alice', serif;
-    --font-courgette: 'Courgette','Segoe Print', cursive;
-
-    --sombra-modoOscuro: 0 0 15px 8px #ac61f180;
-    --img-fotoHome: url(../imagenes/fotodlr.png) no-repeat center;
-    --img-logo: url(../imagenes/logo.svg) no-repeat center;
-    --img-inmowasi: url(../imagenes/logos/inmowasi.webp) no-repeat center;
-    --img-tavo: url(../imagenes/logos/tavo.png) no-repeat center;
-    --img-giss: url(../imagenes/logos/giss_logo.png) no-repeat center;
-    --img-coficont: url(../imagenes/logos/coficont_iso.png) no-repeat center;
-    --img-modoOscuro: url(../imagenes/moon.jpg) no-repeat center;
  }
 
 main{
@@ -46,8 +34,8 @@ main{
 
 /*Contacto*/
 .contacto{
-    width: 100%;
-    padding: 150px 0;
+    width: 82vw;
+    padding: 150px;
     /* min-height: 70vh; */
     display: flex;
     align-items: center;
