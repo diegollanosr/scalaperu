@@ -1,13 +1,23 @@
 :root{
     /* color-scheme: light dark; */
+    --color-blanco: #E4E7EE;
     --color-azul: #3879af;
-    --color-azul-oscuro: rgb(54, 66, 114) ;
+    --color-azul-oscuro: #364272 ;
+    --color-negro: #06111e;
+    --color-dorado: #e7a90c;
     --logo-scala: url(../imagenes/LogoSP.svg) no-repeat center;
-    --height-inicio:calc(100vw / 16 * 6.5)
+    --height-inicio:calc(100vw / 16 * 6.5);
+    /* --color-gris: #333333; */
+    /* --color-rojo: #ff0000; */
+
+    --color--background: var(--color-blanco);
+    --color--texto: var(--color-negro);
+    --color--targets: var(--color-azul);
+    --border--targets: 2px solid var(--color--targets);
 }
 @font-face{
-     font-family: 'scala';
-     src: url(../fonts/AGENCYB.TTF)
+    font-family: 'scala';
+    src: url(../fonts/AGENCYB.TTF)
  }
  *{
     transition: all .5s;
@@ -15,8 +25,17 @@
 	scroll-margin-top: 90px;
 	box-sizing: content-box;
 }
+main{
+    min-height: calc(100vw/16*7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .body{
     font-size: clamp(11px, 1.15vw, 20px);
+    background: var(--color--background);
+    color: var(--color--texto);
 }
 a{
     text-decoration: none;
@@ -100,6 +119,12 @@ button{
     font-family: "Squada One", sans-serif;
     font-size: clamp(11px, 1.8vw , 35px );
 }
+.scroll.movC .header{
+    border-bottom: var(--border--targets);
+}
+.movC .nav_link{
+    color: var(--color-azul-oscuro);
+}
 .scroll .nav_link:hover,
 .nav_link:hover{
     color: #f3ae2e;
@@ -173,15 +198,6 @@ button{
     position: relative;
     z-index: 10;
 }
-/* .nos_res::before{
-    inset: 0;
-    content: "";
-    position: absolute;
-    background: linear-gradient(166deg, #364272db 37%, #3879af78 65%);  
-    pointer-events: none;
-    min-height: 12.5vw;
-    z-index: -1;
-} */
 
 .subt{
     font-weight: bold;
@@ -189,6 +205,7 @@ button{
     text-align: center;
     color: white;
 }
+.valCert .subt,
 .contacto .subt,
 .team .subt,
 .proyectos .subt,
@@ -271,6 +288,7 @@ button{
 }
 .cert{
     padding: 2vw 0;
+    width: calc(100vw - 15px);
     background: var(--color-azul) url(../imagenes/fon_line_plan.png) no-repeat center fixed;
     background-size: cover;
     display: flex;
@@ -312,7 +330,7 @@ button{
     padding: 2.5vw 0 ;
 }
 .prueba_client{
-    width: 90%;
+    width: calc(100vw - 15px);
     margin: auto;
     overflow: hidden;
 }
@@ -377,7 +395,7 @@ button{
 .pryctrack_img{
     width: calc(15vw);
     background-color: #364272;
-    height: calc(15vw / 16 * 12);
+    height: calc(15vw);
     border-radius: 5px;
     /* flex: 0; */
     object-fit: cover;
@@ -408,10 +426,19 @@ button{
     gap: 30px;
     background-color: var(--color-azul);
 }
-
-
-
-
+.errorTitle{
+    font-size: 5vw;
+    font-family: "scala";
+    text-align: center;
+}
+.errorImg{
+    margin: auto;
+    height: 40vw;
+}
+.errorText{
+    padding: 3vw;
+    font-size: 30px;
+}
 
 
 .footer{

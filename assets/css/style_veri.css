@@ -1,42 +1,8 @@
-:root{
-    --color-blanco: #E4E7EE;
-    --color-gris: #333333;
-    --color-negro: #06111e;
-    --color-dorado: #e7a90c;
-    --color-azul: #001e50;
-    --color-rojo: #ff0000;
-    --color-azul-sp: #3879af;
-    --color-azul-oscuro: #041642;
-    --color-azul-transparente: #799deb62;
-    --color-blanco-transparente: #d2d4e050;
-    --color-modo-oscuro: #ac61f1;
-
-    --color--navselec: var(--color-azul);
-    --color--background: var(--color-blanco);
-    --color--background-resaltado: var(--color-azul-transparente) ;
-    --color--texto: var(--color-negro);
-    --color--icon-nav: var(--color-negro);
-    --color--targets: var(--color-azul-sp);
-    --border--targets: 2px solid var(--color--targets);
-    --color--fondo-nav: var(--color-dorado);
- }
-
-main{
-    min-height: calc(100vw/16*7);
-}
-.nav_link{
-    color: #364272;
-    font-family: "Squada One", sans-serif;
-    font-size: clamp(11px, 1.8vw , 35px );
-}
-
-
-
 /*Contacto*/
 .contacto{
-    width: 82vw;
-    padding: 150px;
-    /* min-height: 70vh; */
+    width: 98vw;
+    padding: 90px 0 40px;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -50,8 +16,7 @@ main{
     box-shadow: 0 0 20px 3px var(--color--targets);
     border: var(--border--targets);
     border-radius: 6px;
-    margin: 25px auto;
-    padding: 15px 0;
+    margin: 1vw auto;
 }
 .informacionContacto{
     display: flex;
@@ -74,6 +39,7 @@ main{
     width: 12em;
     display: flex;
     justify-content: space-evenly;
+    /* color: blue; */
 }
 .contactoIcon{
     font-size: 2em;
@@ -81,7 +47,8 @@ main{
     color: var(--color--targets);
 }
 .contactoIcon:hover{
-    background-color: var(--color-blanco);
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
     border-radius: 50%;
 }
 .formularioContacto{
@@ -94,7 +61,7 @@ main{
 }
 .formularioLabel {
 	display: block;
-	height: 1.2em;
+	height: 1.5vw;
 	width: 75%;
 	margin: 15px auto;
 	color: var(--color--texto);
@@ -103,7 +70,7 @@ main{
 	display: block;
 	margin: auto;
 	width: 75%;
-	height: 2em;
+	height: 1.7vw;
     background: none;
 	border: none;
 	outline: none;
@@ -119,6 +86,7 @@ textarea.formularioInput{
     width: 80%;
     margin: auto;
 }
+.botonValidar,
 .formularioBoton{
    background: none;
    color: var(--color--targets);
@@ -127,6 +95,16 @@ textarea.formularioInput{
    font-size: 1.2em;
    font-weight: bold;
 }
+.botonValidar{
+    /* width: 80%; */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.botonValidar:hover,
 .formularioBoton:hover{
     background-color: var(--color--targets);
     color: var(--color-blanco);

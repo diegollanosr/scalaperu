@@ -74,6 +74,6 @@ const listaProy1 = [
     cliente: "Municipalidad Provincial de Cajamarca",
     descripcion: "la supervisión de las estructuras y del sistema vial, asegurando estabilidad, seguridad y un adecuado funcionamiento para la comunidad.",
     detalle: "Esta obra mejoró significativamente la circulación en la zona, permitiendo que las personas se desplacen con mayor seguridad y comodidad. Además, contribuye a una ciudad más ordenada y agradable para vivir.",
-    img: ""
+    img: "sanpablo.jpeg"
   }
 ];
