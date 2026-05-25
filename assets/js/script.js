@@ -2,14 +2,28 @@ const $body = document.getElementById('body');
 // const $listaNav = document.querySelectorAll('.nav_ul a[href^="#"]');
 // const $btnDarkMode = document.getElementById('botonModoOscuro');
 
-
 const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 header.innerHTML = headerHtml;
 footer.innerHTML = footerHtml;
 
+// MAQUETACION
+const certVal = `
+  <section id="valCert" class="valCert">
+    <h2 class="subt">Validar certificado</h2>
+    <div class="valCert_inp">
+      <input id="codigo" class="valCert_inp_ph" placeholder="Ingrese código">
+      <button class="valCert_btn" onclick="validarManual()">Validar</button>
+    </div>
+     <div id="resultado"></div>
+  </section>
+`;
+
+
 const main = document.getElementById("main");
-function router() {
+
+// 1. Agregamos 'async' aquí
+async function router() {
     const hash = window.location.hash || "#/";
     const [rutaCompleta, query] = hash.replace("#/", "").split("?");
     const ruta = rutaCompleta;
@@ -31,26 +45,35 @@ function router() {
         renderProy();
         actAnio();
         scrollASeccion(ruta);
-
     } else if (ruta === "contacto") {
         main.innerHTML = conctactoForm;
         $body.classList.add("movC")
         
-      } else if (ruta === "validar") {
+    } else if (ruta === "validar") {
+        // Primero pintamos el recuadro en la pantalla
         main.innerHTML = certVal;
         $body.classList.add("movC")
-        // 🔥 VALIDACIÓN AUTOMÁTICA
+        
+        // VALIDACIÓN AUTOMÁTICA
         if (id) {
-            validarCertificado(id);
+            // 2. Agregamos 'await' aquí para que espere la respuesta de Supabase
+            try {
+              await window.validarCertificado(id);;
+            } catch (error) {
+                console.error("Error al ejecutar la validación:", error);
+            }
         }
-
     } else {
         main.innerHTML = error404;
+        $body.classList.add("movC")
     }
 }
 
-window.addEventListener("load", router);
+// Añade esto al final de tu JS si no lo tienes
 window.addEventListener("hashchange", router);
+window.addEventListener("load", router);
+
+
 
 function scrollASeccion(id) {
     if (!id || id === "") return;
@@ -218,3 +241,4 @@ function actAnio(){
   //     observer.observe(target);
   //   }
   // });
+  

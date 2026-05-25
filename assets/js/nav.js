@@ -1,4 +1,4 @@
-const headerHtml = `<a class="logo_a_container" href="https://diegollanosr.github.io/scalaperu/">
+const headerHtml = `<a class="logo_a_container" href="/">
             <div class="logo_container">
                 <div class="logo_header"></div>
                 <span class="logo_name">SCALA PERÚ</span>
